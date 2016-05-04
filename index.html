@@ -116,7 +116,7 @@
 
     <!-- Bootstrap and Font Awesome css -->
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap2.css" rel="stylesheet">
 
     <!-- Theme stylesheet -->
     <link href="css/style.green.css" rel="stylesheet" id="theme-stylesheet">
@@ -328,7 +328,7 @@ _________________________________________________________ -->
 
     <!-- *** NAVIGATION BAR *** -->
         <div>
-            <nav class="main-nav" style="padding-top: 15px; text-align: center;">
+            <nav class="main-nav" style="padding-top: 22px; text-align: center;">
                     <a href="#whatWeOffer">What We Offer</a>
                     <a href="#currentCourses">Current Courses</a>
                     <a href="#FAQ">FAQ</a>
@@ -343,10 +343,10 @@ _________________________________________________________ -->
         <div class="section text-gradient" id="whatWeOffer">
             <div class="container">
                 <div class="col-md-12">
+<!--                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
+                <br> -->
                     <h2 class="title courseTitleStyling" data-animate="fadeInDown">What We Offer</h2>
 
                     <div class="row services"> <!-- change this to courses after you copy the styles -->
@@ -354,13 +354,13 @@ _________________________________________________________ -->
                         <div class="col-md-3 hvr-underline-from-left hrv-grow" style="cursor:pointer" id="frontEndIcon" data-animate="fadeInUp">
                             <div class="icon" ><img src="images/code-icon.png" class="design-icons"> 
                             </div>
-                            <h3 class="heading">Front-End Development</h3>
+                            <h3 class="heading">Front-End <br> Development</h3>
                         </div>
 
                         <div class="col-md-3 hvr-underline-from-left" style="cursor:pointer"id="backEndIcon" data-animate="fadeInUp">
                             <div class="icon" ><img src="images/gear-icon.png" class="design-icons"> 
                             </div>
-                            <h3 class="heading">Back-End Development</h3>
+                            <h3 class="heading">Back-End <br> Development</h3>
                         </div>
 
                         <div class="col-md-3 hvr-underline-from-left" style="cursor:pointer"id="dataScienceIcon" data-animate="fadeInUp">
@@ -379,11 +379,12 @@ _________________________________________________________ -->
 
                     <hr>
 
-                    <div class="row generalFields">
+                    <div class="row generalFields center-block">
+
                         <div class="generalFieldsTitle"><h4> Front-End Development </h4></div>
                         <div class="generalFieldsDescription"> <p>Front-end development consists of using HTML, CSS, Javascript, and jQuery to give style and functionality to the front-facing part of a website. </p></div>
                         <div class="generalFieldsKeywords"><h4>Keywords:</h4><p> HTML, CSS, JavaScript, MVC Frameworks, jQuery, React.js, Bootstrap</p></div>
-                        
+
                     </div>
 
                 </div>
@@ -812,10 +813,18 @@ _________________________________________________________ -->
                 </div>    
                 </div>
 
-                <div class="col-md-4 collaboratorDiv">
+                <div class="col-md-3 collaboratorDiv" style="padding-top: 50px; padding-bottom: 95px">
                     <h3 style="margin-top: 0px"> Collaborators:</h3>
+<<<<<<< HEAD
+                    <a href="https://generalassemb.ly/washington-dc"><div><img src="images/GA_logo.png" style="padding-bottom: 40px"></div></a>
+                    <a href="http://datasociety.co/"><div><img src="images/Data-Society-Logo.png"></div></a>
+||||||| merged common ancestors
+                    <a href="https://generalassemb.ly/washington-dc"><div><img src="images/GA_logo.png"></div></a>
+                    <a href="http://datasociety.co/"><div><img src="images/DataSociety_logo.png"></div></a>
+=======
                     <a href="https://generalassemb.ly/washington-dc"><div><img src="images/GA_logo.png"></div></a>
                     <a href="http://datasociety.co/"><div><img src="images/Data-Society-Logo.png" id="datasocietylogo"></div></a>
+>>>>>>> e58ae74aa99cfe113ac5e4adca2c6f63ba2578d9
                 </div>
                 <!-- /.12 -->
             </div>
@@ -1810,8 +1819,9 @@ _________________________________________________________ -->
 <script src="https://www.commerce.gov/sites/all/libraries/qtip/jquery.qtip-1.0.0-rc3.min.js?o1xl7k"></script>
 
 <script>
-
+jQuery(function() {
   jQuery('.accordion-menu-1').accordion({ animated: 'slide', autoHeight: false, clearStyle: false, fillSpace: false, event: 'mousedown', header: 'h3', collapsible: true, navigation: false, icons: { 'header': 'icon-plus', 'headerSelected': 'icon-minus' }, cookie: { path: '/' }, active: false });
+
   jQuery('.accordion-menu-1 .accordion-header.no-children').each(function(index, element) {
     jQuery(this)
       .unbind('.accordion')
@@ -1819,6 +1829,7 @@ _________________________________________________________ -->
       .removeClass('icon-plus')
       .addClass('icon-minus');
   });
+});
 </script>
 
 <script>var usasearch_config = { siteHandle:'commerce.gov' };
