@@ -51,6 +51,14 @@ div.blockContentStyling {
 	display: inline;
 }
 
+@media (max-width: 767px) {
+  #intro .item h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
 .carousel-caption {
 	text-align: left;
 }
@@ -129,6 +137,12 @@ li.navLi {
  	color: #004273;
  }
 
+ @media (max-width: 768px) {
+	.main-nav {
+		height: 90px;
+	}
+}
+
 .main-nav > a:hover, a:active {
   	 text-decoration: none;
   	 background-color: #f1f1f1;
@@ -148,11 +162,19 @@ li.navLi {
 	padding-top: 200px 50px 50px;
 } 
 
-/*#intro .item, */.main-nav-scrolled {
+.main-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 74px;
 }
+
+@media (max-width: 768px){
+	.main-nav-scrolled {
+		top: 60px;
+	}
+}
+
+
 /* END STICKY HEADER */
 
 
