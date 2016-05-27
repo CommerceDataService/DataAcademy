@@ -51,8 +51,17 @@ div.blockContentStyling {
 	display: inline;
 }
 
+@media (max-width: 767px) {
+  #intro .item h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
 .carousel-caption {
 	text-align: left;
+	font-family: 'Coda', Arial, sans-serif;
 }
 
 .introTextSpan {
@@ -129,6 +138,12 @@ li.navLi {
  	color: #004273;
  }
 
+ @media (max-width: 768px) {
+	.main-nav {
+		height: 90px;
+	}
+}
+
 .main-nav > a:hover, a:active {
   	 text-decoration: none;
   	 background-color: #f1f1f1;
@@ -148,11 +163,19 @@ li.navLi {
 	padding-top: 200px 50px 50px;
 } 
 
-/*#intro .item, */.main-nav-scrolled {
+.main-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 74px;
 }
+
+@media (max-width: 768px){
+	.main-nav-scrolled {
+		top: 60px;
+	}
+}
+
+
 /* END STICKY HEADER */
 
 
@@ -295,10 +318,18 @@ h2.title.FAQTitle {
 	font-size: 18px;
 }
 
+
+.contactUsEmail {
+	color: #002952 ; 
+	font-size: 130%;
+}
+
 .collaboratorDiv {
 	border-left-color: black;
 	border-left-style: solid;
 	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 95px;
 }
 
 #datasocietylogo {
@@ -349,6 +380,7 @@ h2.title.FAQTitle {
 
 
 
+
 .region-mobile-menu .block-menu-engage-follow h2.block-title {
   display: none;
 }
@@ -377,3 +409,19 @@ h2.title.FAQTitle {
 }
 
 
+@media only screen 
+and (max-width : 480px) 
+and (orientation : portrait) {
+	.contactUsH3 {
+		text-align:center;
+	}
+
+	.contactUsEmail {
+		text-align: center;
+	}
+
+	.collaboratorDiv {
+		border-left-color: white;
+		padding-bottom: 0px;
+	}
+}
