@@ -439,7 +439,6 @@ $frontEndIcon.click(function(e) {
 	$fieldsTitle.text('Front-End Development')
 	$fieldsKeywords.text(' HTML, CSS, JavaScript, jQuery, Backbone.js, Handlebars')
 	$fieldsDescription.text('Front-end development consists of using HTML, CSS, Javascript, jQuery, and other tools to give style and functionality to the front-facing part of a website.')
-	console.log($fieldsKeywords.text());
 })
 
 $backEndIcon.click(function(e) {
