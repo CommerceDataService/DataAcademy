@@ -61,6 +61,7 @@ div.blockContentStyling {
 
 .carousel-caption {
 	text-align: left;
+	font-family: 'Coda', Arial, sans-serif;
 }
 
 .introTextSpan {
@@ -317,10 +318,18 @@ h2.title.FAQTitle {
 	font-size: 18px;
 }
 
+
+.contactUsEmail {
+	color: #002952 ; 
+	font-size: 130%;
+}
+
 .collaboratorDiv {
 	border-left-color: black;
 	border-left-style: solid;
 	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 95px;
 }
 
 #datasocietylogo {
@@ -371,6 +380,7 @@ h2.title.FAQTitle {
 
 
 
+
 .region-mobile-menu .block-menu-engage-follow h2.block-title {
   display: none;
 }
@@ -399,3 +409,19 @@ h2.title.FAQTitle {
 }
 
 
+@media only screen 
+and (max-width : 480px) 
+and (orientation : portrait) {
+	.contactUsH3 {
+		text-align:center;
+	}
+
+	.contactUsEmail {
+		text-align: center;
+	}
+
+	.collaboratorDiv {
+		border-left-color: white;
+		padding-bottom: 0px;
+	}
+}
