@@ -62,3 +62,7 @@
   6. [Data Analysis ReadME File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.Rmd)
   7. [Data Analysis HTML File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.html)
   8. [Injuries CSV File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/injuries.csv)
+
+*Data Storytelling with R*
+  1. [Step-by-Step Tutorial](http://commercedataservice.github.io/cda_storytelling_in_r/#part_2:_3d_visuals)
+  2. Recording - *Coming Soon*
