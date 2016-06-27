@@ -8,18 +8,27 @@
 
 .filters button {
 	width: 170px;
+	font-weight: bolder;
 }
 
 .data_back_color {
-	background-color: green;
+	background-color: #2C3EA8;
 }
 
 .dev_back_color {
-	background-color: red;
+	background-color: #FF9B35;
 }
 
 .design_back_color {
-	background-color: purple;
+	background-color: #CF3D33;
+}
+
+.white {
+	color: white;
+}
+
+.baby_blue {
+	background-color: #99ccff;
 }
 
 .class_template {
