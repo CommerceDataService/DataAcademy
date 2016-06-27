@@ -1,0 +1,50 @@
+.filters {
+	padding-bottom: 20px;
+}
+
+.class_template {
+	border: black solid 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.class_title {
+	text-align: left;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.class_description {
+	text-align: left;
+	padding-bottom: 25px;
+}
+
+.class_instructors {
+	text-align: left;
+}
+
+.class_date {
+	text-align: right;
+	font-weight: bolder;
+}
+
+.class_time {
+	text-align: right;
+	font-weight: bolder;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.class_time_div {
+	padding-right: 0px;
+}

@@ -406,13 +406,6 @@ $frontEndIcon.click(function(e) {
 	$fieldsDescription.text('Development includes front-end languages like HTML, CSS, Javascript, and jQuery to give style and interactivity to websites, as well as back-end languages like Python, Ruby, and Node.js to program behind-the-scenes functionality of websites.')
 })
 
-// $backEndIcon.click(function(e) {
-// 	e.preventDefault();
-// 	$fieldsTitle.text('Back-End Development')
-// 	$fieldsKeywords.text(' Python, Ruby, Rails, Docker, MySQL, Django')
-// 	$fieldsDescription.text('Back-end developers use languages such as Python, Ruby, or Node.js to program the guts of an application, along with server-side frameworks such as Flask, Django, Rails or Express.js, and also model, store, manipulate, and access data using databases like PostgreSQL, MySQL or MongoDB. ')
-// })
-
 $dataScienceIcon.click(function(e) {
 	e.preventDefault();
 	$fieldsTitle.text('Data-Science');
