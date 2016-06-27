@@ -42,9 +42,7 @@ $.ajax({
       // Initializes MixItUp functionality after the AJAX call is successful
       // and after the Handlebars templates are built
       $('#Container').mixItUp({
-         controls: {
-            enable: false // we won't be needing these
-         },
+
          callbacks: {
             onMixFail: function(state){
                console.log('this is failing');
