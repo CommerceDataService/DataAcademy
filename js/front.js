@@ -1,6 +1,3 @@
-if ($.cookie("theme_csspath")) {
-    $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-}
 
 $(function () {
 
@@ -11,7 +8,6 @@ $(function () {
     sliding();
     counters();
     parallax();
-    demo();
 });
 
 $(window).load(function () {
@@ -36,37 +32,6 @@ $(window).resize(function () {
 
 });
 
-
-/* =========================================
- *  for demo purpose only - can be deleted 
- *  =======================================*/
-
-function demo() {
-
-    if ($.cookie("theme_csspath")) {
-	$('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-	if ($(this).val !== '') {
-
-	    var colour = $(this).val();
-	    var introImage = $('body').find('#intro .item');
-
-	    introImage.removeClass();
-	    introImage.addClass('item');
-	    introImage.addClass(colour);
-
-
-	    var theme_csspath = 'css/style.' + $(this).val() + '.css';
-	    $('link#theme-stylesheet').attr("href", theme_csspath);
-	    $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
-	}
-
-	return false;
-    });
-}
 
 /* =========================================
  *  animations

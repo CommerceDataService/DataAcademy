@@ -138,6 +138,9 @@
     <!-- Mordernizr -->
     <script src="js/modernizr-2.6.2.min.js"></script>
 
+    <!-- Stylesheet for the page -->
+    <link rel="stylesheet" type="text/css" href="css/courses_page.css">
+
     <!-- Responsivity for older IE -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
@@ -338,199 +341,50 @@ _________________________________________________________ -->
         </div>
 
 
-<div>
-
-        <!-- *** REFERENCES IMAGE ***
-_________________________________________________________ -->
-        <div class="section" id="currentCourses">
-            <div class="container">
-                <div class="col-sm-12">
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2 class="title" data-animate="fadeInDown">Courses</h2>
-                    <div class="mb20">
-                        <p class="lead" data-animate="fadeInUp">Please click a type of class below to see our upcoming offerings!</p>
-                    </div>
-
-                    <ul id="filter" data-animate="fadeInUp">
-                        <li class="active"><a href="#" data-filter="all">All</a>
-                        </li>
-                        <li><a href="#" data-filter="frontend">Front-End</a>
-                        </li>
-                        <li><a href="#" data-filter="backend">Back-End</a>
-                        </li>
-                        <li><a href="#" data-filter="uxui">UX/UI Design</a>
-                        </li>
-                        <li><a href="#" data-filter="datascience">Data Science</a>
-                        </li>
-                    </ul>
-
-                    <div id="detail">
-
-                        <span class="close">&times;</span> 
-
-                        <div id="detail-slider"></div>
-
-                        <div class="text-center">
-                            <h1 id="detail-title">&nbsp;</h1>
-                        </div>
-
-                        <div id="detail-content"></div>
-
-                    </div>
-                    <!-- Reference detail -->
-
-                    <div id="references-masonry" data-animate="fadeInUp">
-
-                        <div class="reference-item" data-category="datascience">
-                            <div class="reference">
-                               <a href="#">
-                                    <img src="Mixit_Panels/6-1-16.png" class="img-responsive" alt="" />
-
-                                </a>
-                                 <!-- Everything in this  <div> is essentially the modal -->
-                                <div class="sr-only reference-description">
-
-                                    <h3 class="reference-title">Data Storytelling with R</h3> 
-
-                                    <p class="courseDescription">Overview of internal R data visualization tools as well as use of Shiny, Leaflet, and Plotly for interactive visualizations.</p>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Topics to Be Covered: </p><p>GGPlot2, Shiny, Plotly, Leaflet, RMarkDown, RStudio</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Recommended Pre-Requisite: </p><p>Intro to R</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Date & Time: </p><p>6/1/2016 1:00 - 4:00PM ET</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Instructor: </p><p>Star Ying, Jeff Chen</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Software Needed: </p><p>Git, GitHub, Terminal or Powershell, R, RStudio, Sublime or Atom.io, GGPlot2, Shiny, Plotly, Leaflet, RMarkDown</p></span>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary classRegistrationButton" href="http://goo.gl/forms/Qrzw9eq6pZ" target="_blank"><i class="fa fa-globe"></i> Register</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="datascience">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="Mixit_Panels/6-13-16.png" class="img-responsive" alt="" />
-
-                                </a>
-                                 <!-- Everything in this  <div> is essentially the modal -->
-                                <div class="sr-only reference-description">
-
-                                    <h3 class="reference-title">Data Wrangling with Pandas</h3> 
-
-                                    <p class="courseDescription">Download, explore, and wrangle the Titanic passenger manifest dataset with an eye toward developing a predictive model for survival.</p>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Topics to Be Covered: </p><p>Data Exploration, Predictive Modeling</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Recommended Pre-Requisite: </p><p>Intro to Python</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Date & Time: </p><p>6/13/2016 1:00 - 4:00PM ET</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Instructor: </p><p>Rebecca Bilbro</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Software Needed: </p><p>Git, GitHub, Terminal or Powershell, Pip, Python, Sublime or Atom.io, Pandas, Sqlite3, Scipy, Numpy, Scikit-Learn, Matplotlib, iPython or Jupyter, Bokeh, Seaborn</p></span>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary classRegistrationButton" href="http://goo.gl/forms/Qrzw9eq6pZ" target="_blank"><i class="fa fa-globe"></i> Register</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="datascience">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="Mixit_Panels/7-11-16.png" class="img-responsive" alt="" />
-
-                                </a>
-                                 <!-- Everything in this  <div> is essentially the modal -->
-                                <div class="sr-only reference-description">
-
-                                    <h3 class="reference-title">Intro to Machine Learning</h3> 
-
-                                    <p class="courseDescription">Basic introduction to machine learning: what it is, how it works, and how to get started with machine learning in Python using the Scikit-learn API.</p>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Topics to Be Covered: </p><p>Supervised Learning, Unsupervised Learning, Scikit-Learn, Dimensionality Reduction, Preprocessing</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Recommended Pre-Requisite: </p><p>Intro to Python, Data Wrangling with Pandas</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Date & Time: </p><p>7/11/2016 1:00 - 4:00PM ET</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Instructor: </p><p>Rebecca Bilbro, Star Ying</p></span>
-
-                                    <span class="courseSpanTag"><p class="courseListingKeys">Software Needed: </p><p>Git, GitHub, Python, Pip, Sublime or Atom.io, Terminal or Powershell, Pandas, Sqlite3, Scipy, Numpy, Scikit-Learn, Matplotlib, iPython or Jupyter, Bokeh, Seaborn</p></span>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary classRegistrationButton" href="http://goo.gl/forms/Qrzw9eq6pZ" target="_blank"><i class="fa fa-globe"></i> Register</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="reference-item" data-category="frontend">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="Mixit_Panels/front-end-coming-soon.png" class="img-responsive" alt="" />
-                                </a>
-                                
-                                <div class="sr-only reference-description">
-                                    <h3 class="reference-title">Coming Soon!</h3> 
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="uxui">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="Mixit_Panels/ux-coming-soon.png" class="img-responsive" alt="" />
-                                </a>
-                                
-                                <div class="sr-only reference-description">
-                                    <h3 class="reference-title">Coming Soon!</h3> 
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="backend">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="Mixit_Panels/back-end-coming-soon.png" class="img-responsive" alt="" />
-                                </a>
-
-                                <div class="sr-only reference-description">
-                                    <h3 class="reference-title">Coming Soon!</h3> 
-                                </div>
-
-                            </div>
-                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /#references-masonry -->
-
+        <div id=Container class="section container">
+            <h2 class="title"> COURSES</h2>
+            <div class="filters">
+                <div>
+                    <button type="button" class="btn btn-success btn-lg">Upcoming</button>
+                    <button type="button" class="btn btn-success btn-lg">Past</button>
                 </div>
-                <!-- /.12 -->
+                <div>
+                    <button type="button" class="btn btn-warning btn-lg">All</button>
+                    <button type="button" class="btn btn-warning btn-lg">Data Science</button>
+                    <button type="button" class="btn btn-warning btn-lg">Development</button>
+                    <button type="button" class="btn btn-warning btn-lg">Design</button>
+                </div>
             </div>
-            <!-- /.container -->
+
+            <div class="class_template row">
+                <div class="col-md-3">
+                    <img src="Mixit_Panels/4-19-16.png">
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Data Storytelling</h3>
+
+                    <h4>This is the overview section</h4>
+
+                    <h4>Star Ying, Pri Oberoi</h4>
+                    
+                </div>
+
+                <div class="col-md-2">
+                    <h4>June 3rd, 2016</h4>
+                    <h4>1-4PM</h4>
+                </div>
+                
+            </div>
+            <script id="course_listing_template" type="text/x-handlebars-template" >
+                {{#each data}}
+                <div id="blah">
+                    <h3> {{instructor}}</h3>
+                </div>
+                {{/each}}
+            </script>
         </div>
-        <!-- /.section -->
 
-        <!-- *** COURSES END *** -->
-
-
-        <!-- *** CONTACT ***
-_________________________________________________________ -->
-
-        </div> 
-        <!-- ends body div -->
     </div>
     <!-- /#all -->
 
@@ -1575,9 +1429,6 @@ document.getElementsByTagName('head')[0].appendChild(script);
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- for demo purpose -->
-    <script src="js/jquery.cookie.js"></script>
-
     <!-- waypoints for scroll spy -->
     <script src="js/waypoints.min.js"></script>
 
@@ -1595,6 +1446,9 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
     <!-- jQuery parallax -->
     <script src="js/jquery.parallax-1.1.3.js"></script>
+
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
     <!-- main js file -->
 

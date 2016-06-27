@@ -24,3 +24,33 @@ function fullScreenContainer() {
 	height: screenHeight
     });
 }
+
+$.ajax({
+   type: 'GET',
+   url: '/scripts/cda_courses.json',
+   dataType: 'json',
+   success: function( data ) {
+      
+
+      //This is the initial thumbnail view build
+      var thumbnailSource = $('#course_listing_template').html();
+      var thumbnailTemplate = Handlebars.compile(thumbnailSource);
+      var thumbnailHTML = thumbnailTemplate(data);
+      $('#Container').append(thumbnailHTML);
+
+
+      // Initializes MixItUp functionality after the AJAX call is successful
+      // and after the Handlebars templates are built
+      // $('#Container').mixItUp({
+      //    controls: {
+      //       enable: false // we won't be needing these
+      //    },
+      //    callbacks: {
+      //       onMixFail: function(state){
+      //          console.log('this is failing');
+      //       }
+      //    }
+      // });
+      
+   }
+});
