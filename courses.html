@@ -349,17 +349,17 @@ _________________________________________________________ -->
                     <button type="button" class="btn baby_blue white btn-lg">Past</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-warning btn-lg">All</button>
-                    <button type="button" class="btn data_back_color white btn-lg">Data Science</button>
-                    <button type="button" class="btn dev_back_color white btn-lg">Development</button>
-                    <button type="button" class="btn design_back_color white btn-lg">Design</button>
+                    <button type="button" class="btn btn-warning btn-lg filter" data-filter="all">All</button>
+                    <button type="button" class="btn data_back_color white btn-lg filter" data-filter=".Data">Data Science</button>
+                    <button type="button" class="btn dev_back_color white btn-lg filter" data-filter=".Dev">Development</button>
+                    <button type="button" class="btn design_back_color white btn-lg filter" data-filter=".Design">Design</button>
                 </div>
             </div>
 
             <script id="course_listing_template" type="text/x-handlebars-template" >
                 {{#each data}}
-                <div class="row row-centered">
-                <div class="class_template col-md-10 col-centered {{class_type}}">
+                <div class="row row-centered mix {{class_type}}">
+                <div class="class_template col-md-10 col-centered ">
                     
                         {{#compare class_type "Data"}}
                         <div class="col-md-2 data_back_color">
@@ -1463,6 +1463,9 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
     <!-- Handlebars -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+    <!-- MixItUp -->
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 
     <!-- main js file -->
 
