@@ -2,6 +2,14 @@
 	padding-bottom: 20px;
 }
 
+.filters div {
+	padding-bottom: 10px;
+}
+
+.filters button {
+	width: 170px;
+}
+
 .class_template {
 	border: black solid 5px;
 	padding: 10px;
