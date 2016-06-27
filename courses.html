@@ -359,7 +359,7 @@ _________________________________________________________ -->
             <script id="course_listing_template" type="text/x-handlebars-template" >
                 {{#each data}}
                 <div class="row row-centered">
-                <div class="class_template col-md-10 col-centered">
+                <div class="class_template col-md-10 col-centered {{class_type}}">
                     
                         {{#compare class_type "Data"}}
                         <div class="col-md-2 data_back_color">
