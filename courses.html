@@ -360,9 +360,24 @@ _________________________________________________________ -->
                 {{#each data}}
                 <div class="row row-centered">
                 <div class="class_template col-md-10 col-centered">
-                    <div class="col-md-2">
-                        <img src="Mixit_Panels/4-19-16.png">
-                    </div>
+                    
+                        {{#compare class_type "Data"}}
+                        <div class="col-md-2 data_back_color">
+                            <img src="images/graph-icon.png">
+                        </div>
+                        {{/compare}}
+
+                        {{#compare class_type "Dev"}}
+                        <div class="col-md-2 dev_back_color">
+                            <img src="images/gear-icon.png">
+                        </div>
+                        {{/compare}}
+                    
+                        {{#compare class_type "Design"}}
+                        <div class="col-md-2 design_back_color">
+                            <img src="images/hand-icon.png">
+                        </div>
+                        {{/compare}}
 
                     <div class="col-md-6">
                         <h2 class="class_title">{{course_name}}</h2>

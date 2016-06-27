@@ -10,6 +10,18 @@
 	width: 170px;
 }
 
+.data_back_color {
+	background-color: green;
+}
+
+.dev_back_color {
+	background-color: red;
+}
+
+.design_back_color {
+	background-color: purple;
+}
+
 .class_template {
 	border: black solid 5px;
 	padding: 10px;
