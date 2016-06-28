@@ -62,3 +62,17 @@
   6. [Data Analysis ReadME File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.Rmd)
   7. [Data Analysis HTML File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.html)
   8. [Injuries CSV File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/injuries.csv)
+
+
+##_June 2016_
+
+*Data Storytelling with R*
+  1. [Step-by-Step Tutorial](http://commercedataservice.github.io/cda_storytelling_in_r/)
+  2. [Recording](https://s3.amazonaws.com/cds-cda/DataStorytell_June2016/Data+Academy++Data+Storytelling+with+R-20160601+1701-1+(1).mp4)
+
+*Data Wrangling with Pandas*
+  1. [Materials](https://s3.amazonaws.com/cds-cda/DataWranglingPandas_Jun2016/Data+Academy-+Wrangling+with+Pandas.pdf)
+  2. [Recording](https://s3.amazonaws.com/cds-cda/DataWranglingPandas_Jun2016/Data+Academy++Data+Wrangling+with+Pandas-20160613+1704-1.mp4)
+
+
+
