@@ -45,6 +45,9 @@ $.ajax({
          callbacks: {
             onMixFail: function(state){
                console.log('this is failing');
+          },
+            onMixEnd: function(state){
+              console.log(state.activeFilter)
             }
          },
          layout: {
