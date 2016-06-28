@@ -55,7 +55,14 @@ $.ajax({
             toggleLogic: 'and'
          }
       });
-      
+     
+    var today = new Date();
+
+    var date = $('.class_date').html()
+
+    console.log(today);
+    console.log('this is the date ' + date); 
+    console.log(today > date)
    }
 });
 
@@ -98,3 +105,8 @@ Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options
     }
 
 });
+
+Handlerbars.registerHelper('date_comparision', function() {
+  
+})
+
