@@ -44,10 +44,9 @@ $.ajax({
       $('#Container').mixItUp({
          callbacks: {
             onMixFail: function(state){
-               console.log('this is failing');
+               console.log('MixItUp is not working');
           },
             onMixEnd: function(state){
-              console.log(state.activeFilter)
               $filterResults = $('.filter_results');
               
               $filterResults.html(state.activeFilter);
