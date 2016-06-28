@@ -27,7 +27,7 @@ function fullScreenContainer() {
 
 $.ajax({
    type: 'GET',
-   url: '/scripts/cda_courses.json',
+   url: 'https://github.com/maabrown/DataAcademy/blob/gh-pages/scripts/cda_courses.json',
    dataType: 'json',
    success: function( data ) {
       
