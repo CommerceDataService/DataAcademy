@@ -27,7 +27,7 @@ function fullScreenContainer() {
 
 $.ajax({
    type: 'GET',
-   url: 'cda_courses.json',
+   url: 'scripts/cda_courses.json',
    dataType: 'json',
    success: function( data ) {
       
