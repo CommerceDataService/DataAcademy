@@ -349,11 +349,15 @@ _________________________________________________________ -->
                     <button type="button" class="btn baby_blue white btn-lg filter" data-filter=".past">Past</button>
                 </div>
                 <div>
-                    <button onclick="$('#Container').mixItUp('filter','all')" type="button" class="btn btn-warning btn-lg">Reset</button>
+                    <button onclick="$('#Container').mixItUp('filter','.mix')" type="button" class="btn btn-warning btn-lg">Reset</button>
                     <button type="button" class="btn data_back_color white btn-lg filter" data-filter=".Data">Data Science</button>
                     <button type="button" class="btn dev_back_color white btn-lg filter" data-filter=".Dev">Development</button>
                     <button type="button" class="btn design_back_color white btn-lg filter" data-filter=".Design">Design</button>
                 </div>
+            </div>
+
+            <div class="filters_clicked">
+                <h3>Filters Clicked: </h3><h3 class="filter_results"></h3>
             </div>
 
             <script id="course_listing_template" type="text/x-handlebars-template" >

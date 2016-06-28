@@ -48,6 +48,11 @@ $.ajax({
           },
             onMixEnd: function(state){
               console.log(state.activeFilter)
+              $filterResults = $('.filter_results');
+              
+              $filterResults.html(state.activeFilter);
+
+
             }
          },
          layout: {
