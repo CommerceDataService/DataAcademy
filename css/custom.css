@@ -182,10 +182,8 @@ li.navLi {
 
 div.row.services > div.col-md-3 {
 	padding: 0px;
+	padding-left: 70px;
 }
-
-
-
 
 div.generalFieldsKeywords h5, p {
 	display: inline;
