@@ -358,7 +358,11 @@ _________________________________________________________ -->
 
             <script id="course_listing_template" type="text/x-handlebars-template" >
                 {{#each data}}
+                    {{#date original_date ">"}}                    
                 <div class="row row-centered mix {{class_type}} upcoming">
+                    {{else}}
+                <div class="row row-centered mix {{class_type}} past">
+                    {{/date}}
                 <div class="class_template col-md-10 col-centered ">
                     
                         {{#compare class_type "Data"}}

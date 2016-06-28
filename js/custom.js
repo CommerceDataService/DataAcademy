@@ -62,9 +62,45 @@ $.ajax({
 
     console.log(today);
     console.log('this is the date ' + date); 
-    console.log(today > date)
+    console.log(date > today) // this makes it true, older dates are greater than
    }
 });
+
+Handlebars.registerHelper('date', function (lvalue, operator, options) {
+
+    var operators, result;
+    var today = new Date();
+    var comparison = new Date(lvalue);
+    
+    operators = {
+        '==': function (l, r) { return l == r; },
+        '===': function (l, r) { return l === r; },
+        '!=': function (l, r) { return l != r; },
+        '!==': function (l, r) { return l !== r; },
+        '<': function (l, r) { return l < r; },
+        '>': function (l, r) { return l > r; },
+        '<=': function (l, r) { return l <= r; },
+        '>=': function (l, r) { return l >= r; },
+        'typeof': function (l, r) { return typeof l == r; }
+    };
+    
+    if (!operators[operator]) {
+        throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
+    }
+    
+    result = operators[operator](comparison, today);
+    
+    if (result) {
+
+        return options.fn(this);
+    } 
+    else {
+
+        return options.inverse(this);
+    }
+
+});
+
 
 Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options) {
 
@@ -105,8 +141,3 @@ Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options
     }
 
 });
-
-Handlerbars.registerHelper('date_comparision', function() {
-  
-})
-
