@@ -63,14 +63,6 @@ $.ajax({
             toggleLogic: 'and'
          }
       });
-     
-    var today = new Date();
-
-    var date = $('.class_date').html()
-
-    console.log(today);
-    console.log('this is the date ' + date); 
-    console.log(date > today) // this makes it true, older dates are greater than
    }
 });
 
