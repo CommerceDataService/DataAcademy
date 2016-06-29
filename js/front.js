@@ -1,6 +1,3 @@
-if ($.cookie("theme_csspath")) {
-    $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-}
 
 $(function () {
 
@@ -11,7 +8,6 @@ $(function () {
     sliding();
     counters();
     parallax();
-    demo();
 });
 
 $(window).load(function () {
@@ -36,37 +32,6 @@ $(window).resize(function () {
 
 });
 
-
-/* =========================================
- *  for demo purpose only - can be deleted 
- *  =======================================*/
-
-function demo() {
-
-    if ($.cookie("theme_csspath")) {
-	$('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-	if ($(this).val !== '') {
-
-	    var colour = $(this).val();
-	    var introImage = $('body').find('#intro .item');
-
-	    introImage.removeClass();
-	    introImage.addClass('item');
-	    introImage.addClass(colour);
-
-
-	    var theme_csspath = 'css/style.' + $(this).val() + '.css';
-	    $('link#theme-stylesheet').attr("href", theme_csspath);
-	    $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
-	}
-
-	return false;
-    });
-}
 
 /* =========================================
  *  animations
@@ -440,13 +405,6 @@ $frontEndIcon.click(function(e) {
 	$fieldsKeywords.text(' HTML, CSS, JavaScript, MVC Frameworks, jQuery, React.js, Bootstrap, Python, Ruby, Rails, Docker, MySQL, Django')
 	$fieldsDescription.text('Development includes front-end languages like HTML, CSS, Javascript, and jQuery to give style and interactivity to websites, as well as back-end languages like Python, Ruby, and Node.js to program behind-the-scenes functionality of websites.')
 })
-
-// $backEndIcon.click(function(e) {
-// 	e.preventDefault();
-// 	$fieldsTitle.text('Back-End Development')
-// 	$fieldsKeywords.text(' Python, Ruby, Rails, Docker, MySQL, Django')
-// 	$fieldsDescription.text('Back-end developers use languages such as Python, Ruby, or Node.js to program the guts of an application, along with server-side frameworks such as Flask, Django, Rails or Express.js, and also model, store, manipulate, and access data using databases like PostgreSQL, MySQL or MongoDB. ')
-// })
 
 $dataScienceIcon.click(function(e) {
 	e.preventDefault();
