@@ -11,14 +11,43 @@
 .intro_text {
 	text-align: left;
 	color: black;
+	font-size: 
 }
 
+.interest_div {
+	margin-bottom: 60px;
+}
+
+#scholar_intro {
+	color: black;
+}
+
+@media (min-width: 768px) {
 .schol_options .col-md-3 {
 	width: 27%;
 	margin-left: 15px;
 	margin-right: 15px;
 }
-
+}
 .schol_options > div {
 	background-color: grey;
 }
+
+.schol_options img {
+	margin-bottom: 10px;
+}
+
+.height_set {
+	height: 132px;
+}
+
+.schol_options  a {
+	display: block;
+	background-color: green;
+	font-weight: bolder;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+

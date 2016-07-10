@@ -24,3 +24,14 @@ function fullScreenContainer() {
 	height: screenHeight
     });
 }
+
+/* =============================
+ * scholarship page JS
+ */
+
+ // since the first div has the most words I made it the basis for setting the height
+$(document).ready(function() {
+    var $div_height = $('.height_setter').height();
+    $('.set_height').height($div_height);
+})
+    
