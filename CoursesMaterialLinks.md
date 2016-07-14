@@ -7,7 +7,7 @@
   - [Download (PC)](https://s3.amazonaws.com/cds-cda/MediaPlayerFiles/nbr2player.zip)
 
 
-##_Janary 2016_
+##_January 2016_
 
 *Excel at Excel*
   1. [Answer Key](https://s3.amazonaws.com/cds-cda/Excel_Jan2016/Excel+at+Excel+Answer+Key.xlsx)
@@ -62,7 +62,7 @@
   6. [Data Analysis ReadME File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.Rmd)
   7. [Data Analysis HTML File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.html)
   8. [Injuries CSV File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/injuries.csv)
-
+  9. [Class Recording](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/intro_to_data_analysis.mp4)
 
 ##_June 2016_
 
