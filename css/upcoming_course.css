@@ -65,3 +65,28 @@
 .course_sidebar h4 {
 	display: inline-block;
 }
+
+.upcoming_course_info {
+	text-align: left;
+}
+
+.upcoming_course_info h4 {
+	font-weight: bolder;
+}
+
+.upcoming_course_info > div {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.register_button {
+	background-color: lightgreen;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.register_button h3 {
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
