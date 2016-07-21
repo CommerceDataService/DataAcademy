@@ -449,6 +449,6 @@ div.col-md-2{
 	text-align: center;
 }
 
-.class-columns{
-	padding-top: 20px;
+.table{
+	border: none;
 }
