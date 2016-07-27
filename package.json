@@ -1,0 +1,22 @@
+{
+  "name": "mark",
+  "version": "1.0.0",
+  "description": "The Commerce Data Academy was launched by the Commerce Data Service to offer data science, data engineering, and web development training to employees of the US Department of Commerce.  This repository contains the 2016 course schedule as well as course materials (e.g. slides, code, papers) produced for the Commerce Data Academy.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maabrown/DataAcademy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maabrown/DataAcademy/issues"
+  },
+  "homepage": "https://github.com/maabrown/DataAcademy#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
