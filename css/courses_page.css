@@ -1,0 +1,83 @@
+#Container .mix {
+	display: none;
+}
+
+.filters {
+	padding-bottom: 20px;
+}
+
+.filters div {
+	padding-bottom: 10px;
+}
+
+.filters button {
+	width: 170px;
+	font-weight: bolder;
+}
+
+.data_back_color {
+	background-color: #2C3EA8;
+}
+
+.dev_back_color {
+	background-color: #FF9B35;
+}
+
+.design_back_color {
+	background-color: #CF3D33;
+}
+
+.white {
+	color: white;
+}
+
+.baby_blue {
+	background-color: #99ccff;
+}
+
+.class_template {
+	border: black solid 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.class_title {
+	text-align: left;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.class_description {
+	text-align: left;
+	padding-bottom: 25px;
+}
+
+.class_instructors {
+	text-align: left;
+}
+
+.class_date {
+	text-align: right;
+	font-weight: bolder;
+}
+
+.class_time {
+	text-align: right;
+	font-weight: bolder;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.class_time_div {
+	padding-right: 0px;
+}
