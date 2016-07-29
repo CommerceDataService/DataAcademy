@@ -254,7 +254,16 @@ body.modal-open {
 }
 
 h2.title.courseTitleStyling {
-	margin-bottom: 40px;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 35px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
 }
 
 h3.courseSubtitle {
@@ -422,4 +431,24 @@ and (orientation : portrait) {
 		border-left-color: white;
 		padding-bottom: 0px;
 	}
+}
+
+a, a:hover{
+	color:#002952;
+}
+
+div.col-md-2{
+	padding-right: 20px;
+}
+
+.container.previous-courses-page {
+	padding-top: 100px;
+}
+
+#prev-course-heading{
+	text-align: center;
+}
+
+.table{
+	border: none;
 }
