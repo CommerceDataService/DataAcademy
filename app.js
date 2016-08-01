@@ -35,9 +35,15 @@ app.get('/', function(req,res) {
 	res.render('titlePage');
 });
 
-// app.get('/detailee', function(req,res) {
-// 	res.sendFile(path.join(__dirname, "public/detailee_info.html"));
-// });
+app.get('/detailee/:name', function(req,res) {
+	// res.sendFile(path.join(__dirname, "public/detailee_info.html"));
+	var clickedName = req.params.name;
+	console.log(clickedName);
+});
+
+app.get('/detailee', function(req,res) {
+	res.render('detailee');
+})
 
 // app.get('/courses', function(req, res) {
 // 	res.sendFile(__dirname + "/public/courses.html")
