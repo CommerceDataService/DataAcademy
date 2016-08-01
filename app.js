@@ -2,28 +2,46 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
-var hbs = require('express-hbs');
+var exphbs = require('express-handlebars');
+
+// var options = {
+// 	extensions: ['html'],
+// 	index: false
+// };
+
+
 
 
 // app.use(express.static(__dirname + "/public/index.html"));
-app.engine('hnbs', hbs.express4({
+app.engine('handlebars', exphbs({
 	defaultLayout: 'main',
-	partialsDir: path.join(__dirname, "views/partials")
-})); // for the 'hnbs' file extension, use the hbs.require
+	layoutsDir: __dirname + "/public/views/layouts/"
+}));
 
-app.set('view engine', 'hnbs');  // use 'hnbs' file extension when omitted from file
+app.set('views', __dirname + '/public/views');
+
+app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
-app.use(express.static(path.join(__dirname, "public")));
 
-app.get('/detailee', function(req,res) {
-	res.sendFile(path.join(__dirname, "public/detailee_info.html"));
+app.use(express.static(path.join(__dirname, 'public'), {
+	etag: false,
+	extensions: ['html'],
+	index: false
+} ) );
+
+app.get('/', function(req,res) {
+	res.render('titlePage');
 });
 
-app.get('/courses', function(req, res) {
-	res.sendFile(__dirname + "/public/courses.html")
-});
+// app.get('/detailee', function(req,res) {
+// 	res.sendFile(path.join(__dirname, "public/detailee_info.html"));
+// });
+
+// app.get('/courses', function(req, res) {
+// 	res.sendFile(__dirname + "/public/courses.html")
+// });
 
 console.log(__dirname);
 
