@@ -23,4 +23,10 @@ http://stackoverflow.com/questions/18864677/what-is-process-env-port-in-node-js 
 11. express-handelbars https://github.com/ericf/express-handlebars
 is NOT the same as express-hbs https://github.com/barc/express-hbs
 
-12. 
+12.  index property on 'options': https://expressjs.com/en/4x/api.html#express.static
+
+13. different way to organize public and other things: http://mherman.org/blog/2013/10/20/handling-ajax-calls-with-node-dot-js-and-express-scraping-craigslist/#.V6CfgZMrKTc
+
+14. get method for JS: http://www.w3schools.com/jquery/ajax_get.asp (why we pass parameters to get)
+
+15. 

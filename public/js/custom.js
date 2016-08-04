@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 $.ajax({
    type: 'GET',
-   url: 'scripts/cda_courses.json',
+   url: 'Commerce_Data_Academy_Courses/scripts/cda_courses.json',
    dataType: 'json',
    success: function( data ) {
       
@@ -152,3 +152,19 @@ Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options
     }
 
 });
+
+$('a .detailee_link').click(function(e) {
+
+  $.get('/detailee/andrea', function(data) {
+    $('#results').html(data);
+  });
+
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'Commerce_Data_Academy_Courses/scripts/detailee_info.json',
+  //   dataType: 'json',
+  //   success: function( data ) {
+  //     console.log(data);
+  //   }
+  // })
+})

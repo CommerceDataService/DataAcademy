@@ -3,6 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
 var exphbs = require('express-handlebars');
+var fs = require('fs');
+
 
 // var options = {
 // 	extensions: ['html'],
@@ -35,14 +37,31 @@ app.get('/', function(req,res) {
 	res.render('titlePage');
 });
 
-app.get('/detailee/:name', function(req,res) {
-	// res.sendFile(path.join(__dirname, "public/detailee_info.html"));
-	var clickedName = req.params.name;
-	console.log(clickedName);
-});
+// app.get('/detailee/:name', function(req,res) {
+// 	// res.sendFile(path.join(__dirname, "public/detailee_info.html"));
+// 	var clickedName = req.params.name;
+// });
+
+// app.get('/detailee', function(req,res) {
+// 	// res.send('Whee');
+// 	// var val = req.query.name;
+// 	console.log(req.query);
+// 	res.send('whee');
+// });
 
 app.get('/detailee', function(req,res) {
 	res.render('detailee');
+})
+
+app.get('/detailee/:name', function(req, res) {
+	var val = req.params.name;
+	console.log(val);
+	var text = fs.readFileSync('./scripts/cda_courses.json', 'utf8')
+	console.log(text);
+	console.log(typeof text);
+	var obj = JSON.parse(text);
+	console.log(obj);
+	console.log(typeof obj);
 })
 
 // app.get('/courses', function(req, res) {
