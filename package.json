@@ -20,6 +20,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "express-hbs": "^1.0.2"
+    "express-hbs": "^1.0.2",
+    "json-query": "^2.1.1"
   }
 }

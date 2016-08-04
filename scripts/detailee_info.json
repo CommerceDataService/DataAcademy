@@ -1,13 +1,18 @@
 {
-	"data":[{
-		"name" : "Andrea Bilbro",
-		"bureau" : "BEA",
-		"song" : "something",
-		"nickname" : "andrea"
-	}, {
-		"name" : "Bill Mayer", 
-		"bureau" : "DEA",
-		"song" : "introspective",
-		"nickname" : "bill"
-	}]
+	"data":[
+		{
+			"andrea" : {
+				"name": "Andrea Brown",
+				"pic" : "andrea_brown.jpg",
+				"blog" : "Tis we are all about each other"
+			}
+		},
+		{
+			"patrick" : {
+				"name" : "Patrick Boyd",
+				"pic" : "patrick_boyd.jpg",
+				"blog" : "Let us all love each other"
+			}
+		}
+	]	
 }
