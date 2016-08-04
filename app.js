@@ -7,21 +7,15 @@ var fs = require('fs');
 var jsonQuery = require('json-query');
 
 
-
-
-
-
 app.engine('handlebars', exphbs({
 	defaultLayout: 'main'
-	// layoutsDir: __dirname + "/views/layouts/"
 }));
 
-// app.set('views', __dirname + '/public/views');
+app.set('views', __dirname + '/views');
 
 app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
-
 
 app.use(express.static(path.join(__dirname, 'public'), {
 	etag: false,
@@ -29,21 +23,20 @@ app.use(express.static(path.join(__dirname, 'public'), {
 	index: false
 } ) );
 
+
 app.get('/', function(req,res) {
 	res.render('titlePage');
 });
-
-app.get('/detailee', function(req,res) {
-	res.render('detailee');
-})
 
 app.get('/detailee/:name', function(req, res) {
 	var val = req.params.name;
 	var text = fs.readFileSync('./scripts/detailee_info.json', 'utf8')
 	var obj = JSON.parse(text);
+	console.log(obj);
 	var queryName = jsonQuery('data[0].' + val + '.name', {data: obj}).value;
 	var queryPic = jsonQuery('data[0].' + val + '.pic', {data: obj}).value;
 	var queryBlog =jsonQuery('data[0].' + val + '.blog', {data: obj}).value
+	console.log(queryName);
 	res.render('detailee_info', {
 		queryName: queryName,
 		queryPic: queryPic,
@@ -51,9 +44,12 @@ app.get('/detailee/:name', function(req, res) {
 	})
 })
 
-// app.get('/courses', function(req, res) {
-// 	res.sendFile(__dirname + "/public/courses.html")
-// });
+app.get('/detailee', function(req,res) {
+	res.render('detailee');
+})
+
+
+
 
 console.log(__dirname);
 

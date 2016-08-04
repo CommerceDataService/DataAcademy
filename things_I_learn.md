@@ -29,4 +29,12 @@ is NOT the same as express-hbs https://github.com/barc/express-hbs
 
 14. get method for JS: http://www.w3schools.com/jquery/ajax_get.asp (why we pass parameters to get)
 
-15. 
+15. req.param vs req.query: http://stackoverflow.com/questions/18524125/request-query-and-request-param-in-expressjs
+
+16. ajax vs xmlrequest: http://stackoverflow.com/questions/4657287/what-is-the-difference-between-xmlhttprequest-jquery-ajax-jquery-post-jquery
+
+17. request node module: http://blog.modulus.io/node.js-tutorial-how-to-use-request-module
+
+18. fs in node: http://stackoverflow.com/questions/10011011/using-node-js-how-do-i-read-a-json-object-into-server-memory
+
+19. 
