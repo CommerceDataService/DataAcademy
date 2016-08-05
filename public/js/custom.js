@@ -157,6 +157,7 @@ $('a .detailee_link').click(function(e) {
 
   $.get('/detailee/andrea', function(data) {
     $('#results').html(data);
+    console.log(data);
   });
 
   // $.ajax({
