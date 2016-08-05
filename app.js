@@ -48,9 +48,6 @@ app.get('/detailee', function(req,res) {
 	res.render('detailee');
 })
 
-
-
-
 console.log(__dirname);
 
 app.listen(app.get('port'));
