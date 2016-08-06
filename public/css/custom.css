@@ -465,3 +465,113 @@ and (orientation : portrait) {
 	margin: 20px;
 }
 
+
+/*This is the past course page*/
+
+.breadcrumbs {
+	text-align: left;
+	font-size: 20px;
+}
+
+#new_course_page {
+	margin-top: 60px;
+}
+
+.course_info  {
+	text-align: left;
+}
+
+.course_info h3 {
+	font-weight: bolder;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.course_info p {
+	font-size: x-large;
+}
+
+.course_info li {
+	list-style-type: none;
+	font-size: larger;
+	text-decoration: underline;
+}
+
+.course_info ul {
+	padding-top: 10px;
+}
+
+.course_info a {
+	color: black;
+}
+
+.course_info > div {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.class_buttons_div {
+	text-align: center;
+}
+
+.class_buttons button {
+	width: 130px;
+	white-space: normal;
+	height: 60px;
+	vertical-align: top;
+	text-transform: uppercase;;
+	font-size: large;
+}
+
+.course_sidebar {
+	background-color: lightgrey;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.past_course_div {
+	background-color: yellow;
+	padding-top: 22px;
+	padding-bottom: 10px;
+}
+
+.past_course_div h3 {
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
+
+.course_sidebar .glyphicon {
+	font-size: 40px;
+}
+
+.course_sidebar h4 {
+	display: inline-block;
+}
+
+.past_course_info {
+	text-align: left;
+}
+
+.past_course_info h4 {
+	font-weight: bolder;
+}
+
+.past_course_info > div {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.video_button {
+	background-color: lightgreen;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.video_button h3 {
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
+

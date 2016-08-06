@@ -37,4 +37,6 @@ is NOT the same as express-hbs https://github.com/barc/express-hbs
 
 18. fs in node: http://stackoverflow.com/questions/10011011/using-node-js-how-do-i-read-a-json-object-into-server-memory
 
-19. 
+19. explain server-side vs. client-side JS: http://mherman.org/blog/2013/10/20/handling-ajax-calls-with-node-dot-js-and-express-scraping-craigslist/#.V6Tse5MrKTf
+
+20. 
