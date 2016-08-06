@@ -430,7 +430,7 @@ and (orientation : portrait) {
 
 .breadcrumbs {
 	text-align: left;
-	font-size: 28px;
+	font-size: 20px;
 }
 
 #detailee_intro {
@@ -468,10 +468,6 @@ and (orientation : portrait) {
 
 /*This is the past course page*/
 
-.breadcrumbs {
-	text-align: left;
-	font-size: 20px;
-}
 
 #new_course_page {
 	margin-top: 60px;
@@ -575,3 +571,97 @@ and (orientation : portrait) {
 	margin-bottom: 0px;
 }
 
+
+/*This is the scholarship_page CSS*/
+
+#scholar_intro h2 {
+	text-align: left;
+	font-weight: 900;
+}
+
+.intro_title {
+	margin-top: 60px;
+	color: black;
+}
+
+.intro_text {
+	text-align: left;
+	color: black;
+	font-size: 
+}
+
+.interest_div {
+	margin-bottom: 60px;
+}
+
+#scholar_intro {
+	color: black;
+}
+
+@media (min-width: 768px) {
+.schol_options .col-md-3 {
+	width: 27%;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+}
+.schol_options > div {
+	background-color: grey;
+}
+
+.schol_options img {
+	margin-bottom: 10px;
+}
+
+.height_set {
+	height: 132px;
+}
+
+.schol_options  a {
+	display: block;
+	background-color: green;
+	font-weight: bolder;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: none;
+}
+
+
+/*This is for upcoming_courses CSS*/
+
+.upcoming_course_div {
+	background-color: yellow;
+	padding-top: 22px;
+	padding-bottom: 10px;
+}
+
+.upcoming_course_div h3 {
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
+
+.upcoming_course_info {
+	text-align: left;
+}
+
+.upcoming_course_info h4 {
+	font-weight: bolder;
+}
+
+.upcoming_course_info > div {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.register_button {
+	background-color: lightgreen;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.register_button h3 {
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
