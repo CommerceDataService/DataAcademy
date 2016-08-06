@@ -37,45 +37,45 @@ $(document).ready(function() {
 })
 
 
-$.ajax({
-   type: 'GET',
-   url: 'Commerce_Data_Academy_Courses/scripts/cda_courses.json',
-   dataType: 'json',
-   success: function( data ) {
+// $.ajax({
+//    type: 'GET',
+//    url: 'https://s3.amazonaws.com/cds-cda/Class+JSON/cda_courses.json',
+//    dataType: 'json',
+//    success: function( data ) {
       
 
-      //This is the initial thumbnail view build
-      var thumbnailSource = $('#course_listing_template').html();
-      var thumbnailTemplate = Handlebars.compile(thumbnailSource);
-      var thumbnailHTML = thumbnailTemplate(data);
-      $('#Container').append(thumbnailHTML);
+//       //This is the initial thumbnail view build
+//       var thumbnailSource = $('#course_listing_template').html();
+//       var thumbnailTemplate = Handlebars.compile(thumbnailSource);
+//       var thumbnailHTML = thumbnailTemplate(data);
+//       $('#Container').append(thumbnailHTML);
 
 
-      // Initializes MixItUp functionality after the AJAX call is successful
-      // and after the Handlebars templates are built
-      $('#Container').mixItUp({
-         callbacks: {
-            onMixFail: function(state){
-               console.log('MixItUp is not working');
-          },
-            onMixEnd: function(state){
-              $filterResults = $('.filter_results');
+//       // Initializes MixItUp functionality after the AJAX call is successful
+//       // and after the Handlebars templates are built
+//       $('#Container').mixItUp({
+//          callbacks: {
+//             onMixFail: function(state){
+//                console.log('MixItUp is not working');
+//           },
+//             onMixEnd: function(state){
+//               $filterResults = $('.filter_results');
               
-              $filterResults.html(state.activeFilter);
+//               $filterResults.html(state.activeFilter);
 
 
-            }
-         },
-         layout: {
-            display: 'block'
-         },
-         controls: {
-            toggleFilterButtons: true,
-            toggleLogic: 'and'
-         }
-      });
-   }
-});
+//             }
+//          },
+//          layout: {
+//             display: 'block'
+//          },
+//          controls: {
+//             toggleFilterButtons: true,
+//             toggleLogic: 'and'
+//          }
+//       });
+//    }
+// });
 
 Handlebars.registerHelper('date', function (lvalue, operator, options) {
 

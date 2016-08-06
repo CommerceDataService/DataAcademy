@@ -8,7 +8,80 @@ var jsonQuery = require('json-query');
 
 
 app.engine('handlebars', exphbs({
-	defaultLayout: 'main'
+	defaultLayout: 'main',
+	helpers: {
+			date: function (lvalue, operator, options) {
+
+			    var operators, result;
+			    var today = new Date();
+			    var comparison = new Date(lvalue);
+			    
+			    operators = {
+			        '==': function (l, r) { return l == r; },
+			        '===': function (l, r) { return l === r; },
+			        '!=': function (l, r) { return l != r; },
+			        '!==': function (l, r) { return l !== r; },
+			        '<': function (l, r) { return l < r; },
+			        '>': function (l, r) { return l > r; },
+			        '<=': function (l, r) { return l <= r; },
+			        '>=': function (l, r) { return l >= r; },
+			        'typeof': function (l, r) { return typeof l == r; }
+			    };
+			    
+			    if (!operators[operator]) {
+			        throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
+			    }
+			    
+			    result = operators[operator](comparison, today);
+			    
+			    if (result) {
+
+			        return options.fn(this);
+			    } 
+			    else {
+
+			        return options.inverse(this);
+			    }
+			},
+			compare: function (lvalue, operator, rvalue, options) {
+
+			    var operators, result;
+			    
+			    if (arguments.length < 3) {
+			        throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
+			    }
+			    
+			    if (options === undefined) {
+			        options = rvalue;
+			        rvalue = operator;
+			        operator = "===";
+			    }
+			    
+			    operators = {
+			        '==': function (l, r) { return l == r; },
+			        '===': function (l, r) { return l === r; },
+			        '!=': function (l, r) { return l != r; },
+			        '!==': function (l, r) { return l !== r; },
+			        '<': function (l, r) { return l < r; },
+			        '>': function (l, r) { return l > r; },
+			        '<=': function (l, r) { return l <= r; },
+			        '>=': function (l, r) { return l >= r; },
+			        'typeof': function (l, r) { return typeof l == r; }
+			    };
+			    
+			    if (!operators[operator]) {
+			        throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
+			    }
+			    
+			    result = operators[operator](lvalue, rvalue);
+			    
+			    if (result) {
+			        return options.fn(this);
+			    } else {
+			        return options.inverse(this);
+			    }
+			}
+		}
 }));
 
 // app.set('views', __dirname + '/views');
@@ -30,7 +103,7 @@ app.get('/', function(req,res) {
 
 app.get('/detailee/:name', function(req, res) {
 	var val = req.params.name;
-	var text = fs.readFileSync('./scripts/detailee_info.json', 'utf8')
+	var text = fs.readFileSync('./scripts/detailee_info.json', 'utf8');
 	var obj = JSON.parse(text);
 	console.log(obj);
 	var queryName = jsonQuery('data[0].' + val + '.name', {data: obj}).value;
@@ -46,6 +119,13 @@ app.get('/detailee/:name', function(req, res) {
 
 app.get('/detailee', function(req,res) {
 	res.render('detailee');
+})
+
+app.get('/course', function(req,res) {
+	var text2 = fs.readFileSync('./scripts/cda_courses.json', 'utf8');
+	var obj = JSON.parse(text2);
+	console.log(obj);
+	res.render('corepage', obj);
 })
 
 console.log(__dirname);

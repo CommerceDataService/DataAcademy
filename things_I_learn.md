@@ -39,4 +39,6 @@ is NOT the same as express-hbs https://github.com/barc/express-hbs
 
 19. explain server-side vs. client-side JS: http://mherman.org/blog/2013/10/20/handling-ajax-calls-with-node-dot-js-and-express-scraping-craigslist/#.V6Tse5MrKTf
 
-20. 
+20. why use 'use strict': http://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+
+21.  
