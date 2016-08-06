@@ -485,6 +485,10 @@ and (orientation : portrait) {
 	font-weight: bolder;
 }
 
+a.courses-link h2,h4, a{
+	color: black;
+}
+
 .data_back_color {
 	background-color: #2C3EA8;
 }

@@ -19,10 +19,12 @@
 
                 {{#each data}}
                     {{#date original_date ">"}}                    
+                
                 <div class="row row-centered mix {{class_type}} upcoming">
                     {{else}}
                 <div class="row row-centered mix {{class_type}} past">
                     {{/date}}
+                <a href="http://www.google.com" class="courses_link">
                 <div class="class_template col-md-10 col-centered ">
                     
                         {{#compare class_type "Data"}}
@@ -58,6 +60,8 @@
                     </div>
                 
                 </div>
+                </a>
                 </div>
+                
                 {{/each}}
         </div>
