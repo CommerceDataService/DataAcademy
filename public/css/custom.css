@@ -602,7 +602,7 @@ a.courses-link h2,h4, a{
 	text-align: center;
 }
 
-.class_buttons button {
+.class_buttons a.button {
 	width: 130px;
 	white-space: normal;
 	height: 60px;

@@ -1,0 +1,100 @@
+        <div class="container">
+    
+            <div class="section" id="new_course_page">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumbs">
+                            <span> <a href="/course">Courses</a> / <a href="/course/{{website_identifier}}">{{course_name}}}</a></span> 
+                        </div>
+                    </div>
+                </div> <!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="course_name"> 
+                            <h2 class="title">{{course_name}}</h2>
+                        </div>
+                    </div>
+                </div> <!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="course_info">
+                            <div>
+                                <h3>About: </h3><p> {{description}}</p>
+                            </div>
+                            <div>
+                                <h3>What You'll Learn: </h3><p>{{topics_covered}}</p>
+                            </div>
+                            <div>
+                                <h3>Software Needed: </h3><p> {{software_needed}}</p>
+                            </div>
+                            <div>
+                                <h3>Instructors: </h3><p> {{instructor}}</p>
+                            </div>
+
+                            <div>
+                                <h3>Class Materials:</h3>
+                                    <ul>
+                                        <li><a href="{{slidedeck}}">Slidedeck</a></li>
+                                        <li><a href="{{video_download}}">Video</a></li>
+                                        <li><a href="{{additional_materials}}">Additional Resources</a></li>
+                                    </ul>
+                            </div>
+                            <div>
+                                <h3>Related Classes: </h3>
+                            </div>
+                            <div class="class_buttons_div">
+                                <div class="class_buttons">
+                                    <a class="button" href="{{related_class_1_link}}">{{related_class_1_name}}</a>
+                                    <a class="button" href="{{related_class_2_link}}">{{related_class_2_name}}</a>
+                                    <a class="button" href="{{related_class_3_link}}">{{related_class_3_name}}</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-1"></div>
+
+                
+                    <div class="col-md-3 course_sidebar">
+                        <div class="past_course_div">
+                            <h3>PAST COURSE</h3>
+                        </div>
+
+                        <div class="past_course_info">
+                            <div style="padding-top: 10px">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                <h4>This class has passed</h4>
+                            </div>
+
+                            <div>
+                                <span class="glyphicon glyphicon-hourglass"></span>
+                                <h4>3 hours</h4>
+                            </div>
+
+                            <div>
+                                <span class="glyphicon glyphicon-user"></span>
+                                <h4>Level: </h4><h4>&nbsp;{{level}}</h4>
+                            </div>
+
+                            <div style="padding-bottom: 30px">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <h4>Prerequisite:&nbsp;</h4>
+                                    <h4><a href="{{prereq_1_link}}">{{prereq_1_name}}</h4>
+                                    <h4><a href="{{prereq_2_link}}">{{prereq_2_name}}</h4>
+                            </div>
+                        </div>
+
+                        <div class="video_button">
+                            <h3><a href="{{youtube_link}}">WATCH CLASS VIDEO</a></h3>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- section -->
+        </div>
