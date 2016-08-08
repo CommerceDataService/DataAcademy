@@ -107,7 +107,7 @@ app.get('/detailee/:name', function(req, res) {
 	var obj = JSON.parse(text);
 	var queryName = jsonQuery('data[0].' + val + '.name', {data: obj}).value;
 	var queryPic = jsonQuery('data[0].' + val + '.pic', {data: obj}).value;
-	var queryBlog =jsonQuery('data[0].' + val + '.blog', {data: obj}).value	
+	var queryBlog =jsonQuery('data[0].' + val + '.blog', {data: obj}).value;	
 	res.render('detailee_info', {
 		queryName: queryName,
 		queryPic: queryPic,
@@ -123,6 +123,15 @@ app.get('/course', function(req,res) {
 	var text2 = fs.readFileSync('./scripts/cda_courses.json', 'utf8');
 	var obj = JSON.parse(text2);
 	res.render('corepage', obj);
+})
+
+app.get('/course/:course_name', function(req,res) {
+	var text = fs.readFileSync('./scripts/cda_courses.json', 'utf8');
+	var obj = JSON.parse(text);
+	var course_nm = req.params.name;
+	var queryInfo = jsonQuery('data[0].' + course_nm, {data: obj})
+	console.log(queryInfo.references[0]);
+	res.render('course_info', queryInfo.references[0]);
 })
 
 console.log(__dirname);
