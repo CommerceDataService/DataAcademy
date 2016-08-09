@@ -1,3 +1,4 @@
+    {{#date original_date "<"}}     
         <div class="container">
     
             <div class="section" id="new_course_page">
@@ -36,19 +37,36 @@
                             <div>
                                 <h3>Class Materials:</h3>
                                     <ul>
-                                        <li><a href="{{slidedeck}}">Slidedeck</a></li>
-                                        <li><a href="{{video_download}}">Video</a></li>
-                                        <li><a href="{{additional_materials}}">Additional Resources</a></li>
+                                        <li><a href="http://{{slidedeck}}">Slidedeck</a></li>
+                                        <li><a href="http://{{video_download}}">Video</a></li>
+
+                                        {{#if additional_materials}}
+                                        <li><a href="http://{{additional_materials}}">Additional Resources</a></li>
+                                        {{/if}}
+
                                     </ul>
                             </div>
+                            
+                            {{#if related_class_1_link}}
                             <div>
                                 <h3>Related Classes: </h3>
                             </div>
+                            {{/if}}
+
                             <div class="class_buttons_div">
                                 <div class="class_buttons">
+
+                                    {{#if related_class_1_link}}
                                     <a class="button" href="{{related_class_1_link}}">{{related_class_1_name}}</a>
+                                    {{/if}}
+
+                                    {{#if related_class_2_link}}
                                     <a class="button" href="{{related_class_2_link}}">{{related_class_2_name}}</a>
+                                    {{/if}}
+
+                                    {{#if related_class_3_link}}
                                     <a class="button" href="{{related_class_3_link}}">{{related_class_3_name}}</a>
+                                    {{/if}}
                                 </div>
                             </div>
                         </div>
@@ -82,14 +100,152 @@
                             <div style="padding-bottom: 30px">
                                 <span class="glyphicon glyphicon-book"></span>
                                 <h4>Prerequisite:&nbsp;</h4>
-                                    <h4><a href="{{prereq_1_link}}">{{prereq_1_name}}</h4>
-                                    <h4><a href="{{prereq_2_link}}">{{prereq_2_name}}</h4>
+                                    {{#if prereq_1_name}}
+                                            <h4><a href="{{prereq_1_link}}">{{prereq_1_name}}</h4><br>
+                                            {{#if prereq_2_name}}
+                                            <h4><a href="{{prereq_2_link}}">{{prereq_2_name}}</h4>
+                                            {{/if}}
+                                    {{else}}
+                                            <h4>None</h4>
+                                    {{/if}}
                             </div>
                         </div>
 
+                        {{#if youtube_link}}
                         <div class="video_button">
-                            <h3><a href="{{youtube_link}}">WATCH CLASS VIDEO</a></h3>
+                            <h3><a href="http://{{youtube_link}}">WATCH CLASS VIDEO</a></h3>
                         </div>
+                        {{/if}}
+
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- section -->
+        </div>
+
+        {{else}}
+        <div class="container">
+    
+            <div class="section" id="new_course_page">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumbs">
+                            <span> <a href="/course">Courses</a> / <a href="{{website_identifier}}">{{course_name}}</a></span> 
+                        </div>
+                    </div>
+                </div> <!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="course_name"> 
+                            <h2 class="title">{{course_name}}</h2>
+                        </div>
+                    </div>
+                </div> <!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="course_info">
+                            <div>
+                                <h3>About: </h3><p> {{description}}</p>
+                            </div>
+                            <div>
+                                <h3>What You'll Learn: </h3><p>{{topics_covered}}</p>
+                            </div>
+                            <div>
+                                <h3>Software Needed: </h3><p> {{software_needed}}</p>
+                            </div>
+                            <div>
+                                <h3>Instructors: </h3><p> {{instructor}}</p>
+                            </div>
+
+                            <div>
+                                <h3>Class Materials:</h3>
+                                    <ul>
+                                        <li><a href="http://{{slidedeck}}">Slidedeck</a></li>
+                                        <li><a href="http://{{video_download}}">Video</a></li>
+
+                                        {{#if additional_materials}}
+                                        <li><a href="http://{{additional_materials}}">Additional Resources</a></li>
+                                        {{/if}}
+
+                                    </ul>
+                            </div>
+                            
+                            {{#if related_class_1_link}}
+                            <div>
+                                <h3>Related Classes: </h3>
+                            </div>
+                            {{/if}}
+
+                            <div class="class_buttons_div">
+                                <div class="class_buttons">
+
+                                    {{#if related_class_1_link}}
+                                    <a class="button" href="{{related_class_1_link}}">{{related_class_1_name}}</a>
+                                    {{/if}}
+
+                                    {{#if related_class_2_link}}
+                                    <a class="button" href="{{related_class_2_link}}">{{related_class_2_name}}</a>
+                                    {{/if}}
+
+                                    {{#if related_class_3_link}}
+                                    <a class="button" href="{{related_class_3_link}}">{{related_class_3_name}}</a>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-1"></div>
+
+                
+                    <div class="col-md-3 course_sidebar">
+                        <div class="upcoming_course_div">
+                            <h3>UPCOMING COURSE</h3>
+                        </div>
+
+                        <div class="upcoming_course_info">
+                            <div style="padding-top: 10px">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                <h4>{{original_date}}</h4>
+                            </div>
+
+                            <div>
+                                <span class="glyphicon glyphicon-hourglass"></span>
+                                <h4>1-4PM (3 hours)</h4>
+                            </div>
+
+                            <div>
+                                <span class="glyphicon glyphicon-user"></span>
+                                <h4>Level: </h4><h4>&nbsp;{{level}}</h4>
+                            </div>
+
+                            <div style="padding-bottom: 30px">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <h4>Prerequisite:&nbsp;</h4>
+                                    {{#if prereq_1_name}}
+                                        <h4><a href="{{prereq_1_link}}">{{prereq_1_name}}</h4><br>
+                                        
+                                            {{#if prereq_2_name}}
+                                            <h4><a href="{{prereq_2_link}}">{{prereq_2_name}}</h4>
+                                            {{/if}}
+                                    {{/if}}
+
+                                    {{#unless prereq_1_name}}
+                                            <h4>None</h4>
+                                    {{/unless}}
+                            </div>
+                        </div>
+                        
+                        {{#if register}}
+                        <div class="register_button">
+                            <h3><a href="http://{{register}}">REGISTER</a></h3>
+                        </div>
+                        {{/if}}
                         
                     </div>
                     
@@ -98,3 +254,4 @@
             </div>
             <!-- section -->
         </div>
+    {{/date}}

@@ -41,4 +41,4 @@ is NOT the same as express-hbs https://github.com/barc/express-hbs
 
 20. why use 'use strict': http://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
 
-21.  
+21. when making links when to use 'http:' vs '/' vs '': http://stackoverflow.com/questions/8764288/href-automatically-adds-to-current-page-url-in-php-cant-figure-it-out

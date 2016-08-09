@@ -128,12 +128,13 @@ app.get('/course', function(req,res) {
 app.get('/course/:course_name', function(req,res) {
 	var text = fs.readFileSync('./scripts/cda_courses.json', 'utf8');
 	var obj = JSON.parse(text);
-	var course_nm = req.params.name;
-	var queryInfo = jsonQuery('data[0].' + course_nm, {data: obj})
-	console.log(queryInfo.references[0]);
+	var course_nm = req.params.course_name;
+	// console.log(course_nm);
+	var queryInfo = jsonQuery('data[website_identifier=' + course_nm + ']', {data: obj})
+	// console.log(queryInfo);
 	res.render('course_info', queryInfo.references[0]);
 })
 
-console.log(__dirname);
+// console.log(__dirname);
 
 app.listen(app.get('port'));
