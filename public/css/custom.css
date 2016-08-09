@@ -756,3 +756,9 @@ a.courses-link h2,h4, a{
 	font-weight: bolder;
 	margin-bottom: 0px;
 }
+
+/*This is for the error page*/
+
+.error_li {
+	list-style-type: none;
+}

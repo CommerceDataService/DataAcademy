@@ -135,6 +135,10 @@ app.get('/course/:course_name', function(req,res) {
 	res.render('course_info', queryInfo.references[0]);
 })
 
+app.get('*', function(req,res) {
+	res.render('500');
+});
+
 // console.log(__dirname);
 
 app.listen(app.get('port'));
