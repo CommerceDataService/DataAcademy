@@ -438,8 +438,8 @@ and (orientation : portrait) {
 	font-size: 20px;
 }
 
-.black {
-	color: black;
+.breadcrumb_link {
+	color: #000080;
 }
 
 #detailee_intro {
