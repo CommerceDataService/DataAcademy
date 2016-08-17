@@ -191,6 +191,7 @@ div.generalFieldsKeywords h5, p {
 
 div.generalFieldsTitle h4 {
 	font-weight: bold;
+	color: white;
 }
 
 div.generalFieldsDescription {
@@ -200,6 +201,10 @@ div.generalFieldsDescription {
 
 div.section#references {
 	padding-top: 10px;
+}
+
+div.generalFieldsKeywords {
+	color: white;
 }
 
 p.courseListingKeys {
@@ -483,10 +488,6 @@ and (orientation : portrait) {
 .filters button {
 	width: 170px;
 	font-weight: bolder;
-}
-
-a.courses-link h2,h4, a{
-	color: black;
 }
 
 .data_back_color {
