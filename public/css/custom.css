@@ -438,6 +438,10 @@ and (orientation : portrait) {
 	font-size: 20px;
 }
 
+.black {
+	color: black;
+}
+
 #detailee_intro {
 	margin-top: 60px;
 }
@@ -500,6 +504,10 @@ and (orientation : portrait) {
 
 .design_back_color {
 	background-color: #CF3D33;
+}
+
+a.courses_link {
+	color:black;
 }
 
 .white {
