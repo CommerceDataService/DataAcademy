@@ -767,7 +767,18 @@ a.courses_link {
 }
 
 /*This is for the error page*/
+.no_list_dot {
+	list-style-type: none;
+}
 
 .error_li {
-	list-style-type: none;
+	font-size: 25px;
+}
+
+.error_li a {
+	color: #276289;
+}
+
+.page_not_found_header {
+	padding-top: 50px;
 }
