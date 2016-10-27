@@ -436,9 +436,9 @@ var $fieldsKeywords = $('.generalFieldsKeywords p')
 
 $frontEndIcon.click(function(e) {
 	e.preventDefault();
-	$fieldsTitle.text('Development')
+	$fieldsTitle.text('Software Engineering')
 	$fieldsKeywords.text(' HTML, CSS, JavaScript, MVC Frameworks, jQuery, React.js, Bootstrap, Python, Ruby, Rails, Docker, MySQL, Django')
-	$fieldsDescription.text('Development includes front-end languages like HTML, CSS, Javascript, and jQuery to give style and interactivity to websites, as well as back-end languages like Python, Ruby, and Node.js to program behind-the-scenes functionality of websites.')
+	$fieldsDescription.text('Software Engineering includes front-end languages like HTML, CSS, Javascript, and jQuery to give style and interactivity to websites, as well as back-end languages like Python, Ruby, and Node.js to program behind-the-scenes functionality of websites.')
 })
 
 // $backEndIcon.click(function(e) {
