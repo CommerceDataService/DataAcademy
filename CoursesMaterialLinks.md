@@ -7,7 +7,7 @@
   - [Download (PC)](https://s3.amazonaws.com/cds-cda/MediaPlayerFiles/nbr2player.zip)
 
 
-##_Janary 2016_
+##_January 2016_
 
 *Excel at Excel*
   1. [Answer Key](https://s3.amazonaws.com/cds-cda/Excel_Jan2016/Excel+at+Excel+Answer+Key.xlsx)
@@ -46,4 +46,33 @@
 *Intro to Python*
   1. [Class Recording](https://s3.amazonaws.com/cds-cda/IntroPyth_Apr2016/Intro_To_Python.zip)
   2. [Presentation](https://s3.amazonaws.com/cds-cda/IntroPyth_Apr2016/Intro+to+Python.pdf)
+
+##_May 2016_
+
+*Intro to R*
+  1. [Presentation](https://s3.amazonaws.com/cds-cda/IntroR_May2016/IntroToR.PDF)
+  2. [Class Recording](https://s3.amazonaws.com/cds-cda/IntroR_May2016/IntroToR_Recording)
+
+*Intro to Data Analysis with R*
+  1. [NBM Wireless CSV Sheet](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/DC-NBM-Wireless-CSV-JUN-2014.csv)
+  2. [Presentation](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/Data+Academy-+Intro+to+Data+Analysis+with+R.pdf)
+  3. [Getting Into Data Science Resources](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/Getting+into+Data+Science+Resources)
+  4. [README.md File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/README.md)
+  5. [Read-Me-CSV-June](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/Read-Me-CSV-June-2014.txt)
+  6. [Data Analysis ReadME File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.Rmd)
+  7. [Data Analysis HTML File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/data_analysis_with_R.html)
+  8. [Injuries CSV File](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/R_intro_to_data_analysis-master/injuries.csv)
+  9. [Class Recording](https://s3.amazonaws.com/cds-cda/DataAnalysis_May2016/intro_to_data_analysis.mp4)
+
+##_June 2016_
+
+*Data Storytelling with R*
+  1. [Step-by-Step Tutorial](http://commercedataservice.github.io/cda_storytelling_in_r/)
+  2. [Class Recording](https://s3.amazonaws.com/cds-cda/DataStorytell_June2016/Data+Academy++Data+Storytelling+with+R-20160601+1701-1+(1).mp4)
+
+*Data Wrangling with Pandas*
+  1. [Materials](https://s3.amazonaws.com/cds-cda/DataWranglingPandas_Jun2016/Data+Academy-+Wrangling+with+Pandas.pdf)
+  2. [Class Recording](https://s3.amazonaws.com/cds-cda/DataWranglingPandas_Jun2016/Data+Academy++Data+Wrangling+with+Pandas-20160613+1704-1.mp4)
+
+
 

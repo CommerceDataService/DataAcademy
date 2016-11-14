@@ -436,18 +436,17 @@ var $fieldsKeywords = $('.generalFieldsKeywords p')
 
 $frontEndIcon.click(function(e) {
 	e.preventDefault();
-	$fieldsTitle.text('Front-End Development')
-	$fieldsKeywords.text(' HTML, CSS, JavaScript, jQuery, Backbone.js, Handlebars')
-	$fieldsDescription.text('Front-end development consists of using HTML, CSS, Javascript, jQuery, and other tools to give style and functionality to the front-facing part of a website.')
-	console.log($fieldsKeywords.text());
+	$fieldsTitle.text('Software Engineering')
+	$fieldsKeywords.text(' HTML, CSS, JavaScript, MVC Frameworks, jQuery, React.js, Bootstrap, Python, Ruby, Rails, Docker, MySQL, Django')
+	$fieldsDescription.text('Software Engineering includes front-end languages like HTML, CSS, Javascript, and jQuery to give style and interactivity to websites, as well as back-end languages like Python, Ruby, and Node.js to program behind-the-scenes functionality of websites.')
 })
 
-$backEndIcon.click(function(e) {
-	e.preventDefault();
-	$fieldsTitle.text('Back-End Development')
-	$fieldsKeywords.text(' Python, Ruby, Rails, Docker, MySQL, Django')
-	$fieldsDescription.text('Back-end developers use languages such as Python, Ruby, or Node.js to program the guts of an application, along with server-side frameworks such as Flask, Django, Rails or Express.js, and also model, store, manipulate, and access data using databases like PostgreSQL, MySQL or MongoDB. ')
-})
+// $backEndIcon.click(function(e) {
+// 	e.preventDefault();
+// 	$fieldsTitle.text('Back-End Development')
+// 	$fieldsKeywords.text(' Python, Ruby, Rails, Docker, MySQL, Django')
+// 	$fieldsDescription.text('Back-end developers use languages such as Python, Ruby, or Node.js to program the guts of an application, along with server-side frameworks such as Flask, Django, Rails or Express.js, and also model, store, manipulate, and access data using databases like PostgreSQL, MySQL or MongoDB. ')
+// })
 
 $dataScienceIcon.click(function(e) {
 	e.preventDefault();

@@ -51,8 +51,17 @@ div.blockContentStyling {
 	display: inline;
 }
 
+@media (max-width: 767px) {
+  #intro .item h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
 .carousel-caption {
 	text-align: left;
+	font-family: 'Coda', Arial, sans-serif;
 }
 
 .introTextSpan {
@@ -129,6 +138,12 @@ li.navLi {
  	color: #004273;
  }
 
+ @media (max-width: 768px) {
+	.main-nav {
+		height: 90px;
+	}
+}
+
 .main-nav > a:hover, a:active {
   	 text-decoration: none;
   	 background-color: #f1f1f1;
@@ -148,21 +163,27 @@ li.navLi {
 	padding-top: 200px 50px 50px;
 } 
 
-/*#intro .item, */.main-nav-scrolled {
+.main-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 74px;
 }
+
+@media (max-width: 768px){
+	.main-nav-scrolled {
+		top: 60px;
+	}
+}
+
+
 /* END STICKY HEADER */
 
 
 
 div.row.services > div.col-md-3 {
 	padding: 0px;
+	padding-left: 70px;
 }
-
-
-
 
 div.generalFieldsKeywords h5, p {
 	display: inline;
@@ -233,7 +254,16 @@ body.modal-open {
 }
 
 h2.title.courseTitleStyling {
-	margin-bottom: 40px;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 35px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
 }
 
 h3.courseSubtitle {
@@ -295,10 +325,18 @@ h2.title.FAQTitle {
 	font-size: 18px;
 }
 
+
+.contactUsEmail {
+	color: #002952 ; 
+	font-size: 130%;
+}
+
 .collaboratorDiv {
 	border-left-color: black;
 	border-left-style: solid;
 	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 95px;
 }
 
 #datasocietylogo {
@@ -349,6 +387,7 @@ h2.title.FAQTitle {
 
 
 
+
 .region-mobile-menu .block-menu-engage-follow h2.block-title {
   display: none;
 }
@@ -377,3 +416,39 @@ h2.title.FAQTitle {
 }
 
 
+@media only screen 
+and (max-width : 480px) 
+and (orientation : portrait) {
+	.contactUsH3 {
+		text-align:center;
+	}
+
+	.contactUsEmail {
+		text-align: center;
+	}
+
+	.collaboratorDiv {
+		border-left-color: white;
+		padding-bottom: 0px;
+	}
+}
+
+a, a:hover{
+	color:#002952;
+}
+
+div.col-md-2{
+	padding-right: 20px;
+}
+
+.container.previous-courses-page {
+	padding-top: 100px;
+}
+
+#prev-course-heading{
+	text-align: center;
+}
+
+.table{
+	border: none;
+}
